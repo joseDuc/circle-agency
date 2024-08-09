@@ -22,9 +22,13 @@
     :first-child{
         margin-top:100px;
     }
-    a{
+    .menu-link{
         margin: 10px;
     }
+    .menu-link:hover{
+        color: white;
+    }
+
 
 }
 

@@ -1,99 +1,108 @@
-
-#hero{
+#hero {
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 90%;
-    padding-top: 50px;
     gap: 20px;
-    .hero-text{
+    margin-top: 50px;
+    
+    .hero-text {
         display: flex;
         flex-direction: column;
         gap: 20px;
         width: 50%;
 
-        .links{
+        .links {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
             gap: 20px;
         }
-        
+
     }
-    .hero-images{
+
+    .hero-images {
         position: relative;
-        width:50%;
-        .img-hero{
+        width: 50%;
+
+        .img-hero {
             width: 100%;
-           
+
         }
-        .img-cardTop{
+
+        .img-cardTop {
             position: absolute;
-            top:0;
-            left:0;
+            top: 0;
+            left: 0;
             width: 40%;
         }
-        .img-cardBot{
+
+        .img-cardBot {
             position: absolute;
             bottom: 0;
             right: 0;
             width: 40%;
-        } 
+        }
     }
 
 }
 
-#clients{
-        width: 90%;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        padding-top:100px;
+#clients {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+    margin-top: 50px;
 
     .clientes-image {
         width: 100px;
         margin: auto;
         filter: grayscale(1);
         transition: width 0.5s;
-      }
+    }
 
-      .clientes-image:hover {
+    .clientes-image:hover {
         filter: grayscale(0);
         width: 125px;
         margin: auto;
         transition: width 0.5s;
-      }
-}
-#projects{
-    padding-top: 100px;
+    }
 }
 
+
+
 @media (max-width: 600px) {
-    #hero{
+    #hero {
         flex-wrap: wrap;
         justify-content: space-evenly;
-        .hero-text{
+
+        .hero-text {
             width: 100%;
         }
-        .hero-images{
-            .img-carda{
+
+        .hero-images {
+            .img-carda {
                 width: 80px;
-            } 
+            }
         }
     }
-    #clients{
-        .clientes-image{
-            width: 75px;
+
+    #clients {
+        height: 100px;
+        .clientes-image {
+            width: 50px;
         }
+
         .clientes-image:hover {
             filter: grayscale(0);
-            width: 100px;
+            width: 75px;
             margin: auto;
             transition: width 0.5s;
-          }
+        }
     }
-   
+
 }
