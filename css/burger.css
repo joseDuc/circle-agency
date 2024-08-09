@@ -1,0 +1,54 @@
+#burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    div {
+        background-color: black;
+        height: 4px;
+        width: 40px;
+    }
+}
+
+#nav-menu-vertical {
+    background-color: violet;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.6;
+    display: none;
+    list-style: none;
+    transition: all 0.4s ease;
+    :first-child{
+        margin-top:100px;
+    }
+    a{
+        margin: 10px;
+    }
+
+}
+
+#nav-menu-vertical.active {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    padding: 20px;
+    padding-top: 10%;
+    gap: 10px;
+}
+
+@media (min-width: 600px) {
+    #burger {
+        display: none;
+    }
+    #nav-menu-vertical{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav-menu-horizontal{
+        display: none;
+    }
+   
+}
