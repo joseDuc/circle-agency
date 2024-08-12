@@ -205,7 +205,7 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap:20px ;
+        gap:10px ;
     }
     .footer-logo{
         width: 150px;
