@@ -239,7 +239,7 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: left;
+        justify-content: right;
         align-items: center;
         gap: 20px;
 
@@ -264,10 +264,7 @@ header {
     }
 
     #newsletter {
-        margin-top: 100px;
-        width: 90%;
-        height: 300px;
-        background-color: var(--yelow);
+
 
         form {
             gap: 20px;
