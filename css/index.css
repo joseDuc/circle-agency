@@ -217,10 +217,13 @@
 
     #clients {
         height: 100px;
-
+        gap: 35px;
+        .clientes-image{
+            width: 80px;
+        }
         .clientes-image:hover {
             filter: grayscale(0);
-
+            width: 95px;
             margin: auto;
             transition: width 0.5s;
         }
