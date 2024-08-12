@@ -81,6 +81,7 @@ function insertFormNewsLetter() {
         f.appendChild(d);
         news.appendChild(f);
         f.className='centeredAtNucleo';
+        f.action='../html/contact.html'
     }
 }
 

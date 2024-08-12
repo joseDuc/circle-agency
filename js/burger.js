@@ -1,15 +1,20 @@
 window.addEventListener('load', () => {
+   
     createMenuBurger();
 });
 
 function createMenuBurger() {
     if (document.querySelector('#burger')) {
+        
         if (createMenuVertical()) {
+            
             const burger = document.querySelector('#burger')
              //burger former
+            
             for (i = 0; i < 3; ++i) {
                 let div=document.createElement('div');
                 burger.appendChild(div);
+                
             }
             burger.addEventListener('click', () => {
                 //add clic event for alternate menu
