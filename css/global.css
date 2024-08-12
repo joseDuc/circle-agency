@@ -196,6 +196,51 @@ header {
     }
 
 }
+
+#footer{
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:20px ;
+    }
+    .footer-logo{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img{
+            width: 75px;
+        }
+
+        p{
+            margin-top: 10px;
+            color:var(--medium);
+            font-size: 10px;
+        }
+    }
+    .footer-links{
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left ;
+        align-items: normal;
+        gap: 20px;
+        a{
+            font-size: 10px;
+            color:var(--medium);
+            width: 75px;
+        }
+        a:hover{
+            cursor: pointer
+        }
+    }
+}
+
 @media (max-width: 800px) {
     #projects {
         .container {
@@ -212,5 +257,11 @@ header {
         form{
             gap: 20px;
         }
+    }
+    #footer{
+        .footer-links{
+            gap: 10px;
+        }
+    
     }
 }

@@ -1,8 +1,8 @@
 var rutaProjects = 'https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects'
 
 window.addEventListener('load',()=>{
-    
-    insertaFormNewsLetter();
+    insertFormNewsLetter();
+    insertFooter();
 });
 function appendJsonToProjectArticles(data) {
     const container = document.querySelector('#projects .container');
@@ -56,7 +56,7 @@ function convertToProjectText(project) {
     return div;
 }
 
-function insertaFormNewsLetter() {
+function insertFormNewsLetter() {
     const news = document.querySelector('#newsletter');
     if (news) {
         const f = document.createElement('form');
@@ -84,6 +84,56 @@ function insertaFormNewsLetter() {
     }
 }
 
+function insertFooter(){
+const f =document.querySelector('#footer');
+
+if (f){
+    const div=document.createElement('div');
+    const divLogo=document.createElement('div');
+    const divLinks=document.createElement('div');
+    const img=document.createElement('img');
+    const p=document.createElement('p');
+    let i =document.createElement('a');
+    i.innerText='Team';
+    divLinks.appendChild(i);
+     i =document.createElement('a');
+    i.innerText='Services';
+    divLinks.appendChild(i);
+     i =document.createElement('a');
+    i.innerText='About Us';
+    divLinks.appendChild(i);
+     i =document.createElement('a');
+    i.innerText='Press';
+    divLinks.appendChild(i);
+     i =document.createElement('a');
+    i.innerText='Projects';
+    divLinks.appendChild(i);
+     i =document.createElement('a');
+    i.innerText='Privacy Policy';
+    divLinks.appendChild(i);
+     i =document.createElement('a');
+    divLinks.className='footer-links';
+
+    i =document.createElement('a');
+    i.href='';
+    img.src='../img/logos/circle.svg';
+    img.alt='logo';
+    i.appendChild(img)
+    divLogo.appendChild(i);
+    p.innerText='2972 Westheimer Rd. Santa Ana, Illinois 85486 ';
+    
+    
+   
+
+    divLogo.appendChild(p);
+    divLogo.className='footer-logo';
+    div.className='container centeredAtNucleo';
+    div.appendChild(divLogo);
+    div.appendChild(divLinks);
+    f.appendChild(div);
+    
+}
+}
 function getQuerystring(param) {
     //un método que he de aprender para encontrar cualquier parámetro del querystring en cualquier futura URL
     alert('query')
