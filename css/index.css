@@ -116,40 +116,87 @@
         align-items: center;
         gap: 80px;
         padding-top: 80px;
-        .testimonial-profile-title{
-            color: var( --light);
-        }
-        .testimonial-profile-text{
-              color: var(--yelow);  
-              font-size: 0.8em;
+
+        .testimonial-profile-title {
+            color: var(--light);
         }
 
-        .testimonial-profile-person{
+        .testimonial-profile-text {
+            color: var(--yelow);
+            font-size: 0.8em;
+        }
+
+        .testimonial-profile-person {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 10px;
-            .testimonial-profile-img{
+
+            .testimonial-profile-img {
                 border-radius: 50%;
                 width: 50px;
                 height: 50px;
             }
-            .testimonial-profile-name{
+
+            .testimonial-profile-name {
                 color: var(--accent);
                 font-size: 0.7em;
             }
-            .testimonial-profile-url{
+
+            .testimonial-profile-url {
                 color: var(--tapped);
                 font-size: 0.7em;
             }
 
         }
     }
+
     #testimonial-profile {
         .testimonial-profile {
             gap: 10px;
         }
     }
+}
+
+#services {
+    margin-top: 50px;
+    width: 90%;
+
+    .card {
+        position: relative;
+        background-color: white;
+        width: 250px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        text-decoration: none;
+        padding: 20px;
+        .services-img {
+            width: 50px;
+        }
+        h4{
+            color: var(--dark);
+        }
+        .services-text{
+            color:var(--medium);
+        }
+
+        .learnMore:hover{
+            text-decoration:underline;
+        }
+    }
+
+    .services-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: normal;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -179,12 +226,13 @@
         }
     }
 
-    #testimonial{
-        .monigote{
+    #testimonial {
+        .monigote {
             width: 50px;
         }
-        .testimonial-profile{
-                gap: 50px;
+
+        .testimonial-profile {
+            gap: 50px;
         }
     }
 
