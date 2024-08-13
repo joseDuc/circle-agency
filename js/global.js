@@ -137,7 +137,6 @@ const projectContainer =document.querySelector('#project');
 if (projectContainer){
     projectContainer.innerHTML="";
 }
-
 if (project){
     const h1=document.createElement('h1');
     const contSubTitle=document.createElement('div');
@@ -193,6 +192,4 @@ function getQuerystring(param) {
     } else {
         return null;
     }
-
-
 }

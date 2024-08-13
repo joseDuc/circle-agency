@@ -7,7 +7,6 @@ async function loadRecentProjects() {
         const response = await fetch(rutaProjects);
         const data = await response.json();
         const projectID = getQuerystring('id');
-        
         if (projectID) {
             const mainIdx = data.findIndex(
                 (project) => project.uuid == projectID

@@ -4,7 +4,7 @@
 
     .form-container {
         margin-top: 50px;
-        height: 350px;
+       
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -12,13 +12,14 @@
         label {
             font-size: 12px;
             color: var(--medium);
+            padding-left: 5px;
         }
 
-        input {
+        input[type='email'], input[type='number'], input[type='text']{
             width: 100%;
             padding: 10px;
             margin-top: 5px;
-            font-size: 10px;
+            font-size: 12px;
             background-color: rgba(107, 112, 141, 0.1);
             border: 0px;
         }
@@ -27,57 +28,68 @@
             width: 100%;
             height: 100px;
             margin-top: 5px;
-            background-color:var(--light_blue);
             background-color: rgba(107, 112, 141, 0.1);
             border: 0px;
-            text-align:justify;
+            text-align: justify;
         }
-
-        button {
+        input[type='submit' ]{
             font-size: 12px;
             width: 100%;
         }
+        
+
 
         .contact-mode {
             display: flex;
             flex-direction: row;
             gap: 6%;
+
             .contact-mode-email {
                 width: 47%;
                 min-width: 150px;
+
                 input {
-                    width: 100%; 
+                    width: 100%;
                 }
             }
-    
+
             .contact-mode-phone {
                 width: 47%;
                 min-width: 150px;
+
                 input {
                     width: 100%;
                 }
             }
         }
 
-        
     }
-
+    .errorMsg{
+        color: red;
+    }
+    .errorInput{
+        border: 2px solid red;
+    }
 }
 
-@media (max-width:600px){
+
+@media (max-width:600px) {
     #form {
         width: 90%;
+
         .form-container {
             .contact-mode {
                 flex-direction: column;
+                gap: 20px;
                 .contact-mode-email {
                     width: 100%;
                 }
+
                 .contact-mode-phone {
                     width: 100%;
                 }
             }
-            
+
         }
     }
 }
