@@ -10,6 +10,6 @@ async function loadRecentProjects() {
     } catch (e) {
         console.log(e);
     } finally {
-       
+
     }
 }

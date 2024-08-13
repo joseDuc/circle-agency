@@ -70,6 +70,7 @@
         width: 125%;
         margin: auto;
         transition: width 0.5s;
+
     }
 }
 
@@ -173,19 +174,26 @@
         gap: 20px;
         text-decoration: none;
         padding: 20px;
+
         .services-img {
             width: 50px;
         }
-        h4{
+
+        h4 {
             color: var(--dark);
         }
-        .services-text{
-            color:var(--medium);
+
+        .services-text {
+            color: var(--medium);
         }
 
-        .learnMore:hover{
-            text-decoration:underline;
+        .learnMore:hover {
+            text-decoration: underline;
         }
+    }
+
+    .card:hover {
+        box-shadow: 15px 15px 15px  var(--dark);
     }
 
     .services-cards {
@@ -195,9 +203,12 @@
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 40px;
+
     }
 
 }
+
+
 
 @media (max-width: 600px) {
     #hero {
@@ -216,11 +227,12 @@
     }
 
     #clients {
-        height: 100px;
         gap: 30px;
-        .clientes-image{
+
+        .clientes-image {
             width: 70px;
         }
+
         .clientes-image:hover {
             filter: grayscale(0);
             width: 85px;
@@ -231,7 +243,7 @@
 
     #testimonial {
         .monigote {
-            width: 50px;
+            width: 75px;
         }
 
         .testimonial-profile {

@@ -61,10 +61,11 @@ a:hover {
 .btn {
     background-color: #072AC8;
     color: white;
-    padding: 5px;
+    padding: 10px;
     min-width: 100px;
     text-align: center;
     font-size: 0.8em;
+    border: 0;
 }
 
 .centeredAtNucleo {
@@ -89,9 +90,10 @@ header {
                 margin: 10px;
                 color: var(--medium);
             }
-            .selected-link{
+
+            .selected-link {
                 font-weight: bold;
-                color:var(--primary_default) ;
+                color: var(--primary_default);
             }
         }
     }
@@ -152,47 +154,56 @@ header {
             }
 
         }
+        article:hover {
+            box-shadow: 15px 15px 15px var(--dark);
+        }
     }
 }
 
-#project{
+#project {
     width: 90%;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    .container-subtitle{
+
+    .container-subtitle {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
-        .container-date{
+
+        .container-date {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 5px;
-            .date{
+
+            .date {
                 color: var(--medium);
                 font-size: 14px;
             }
-            .fixed{
+
+            .fixed {
                 font-size: 14px;
             }
         }
-        
-        
+
     }
-    img{
+
+    img {
         margin-top: 50px;
         width: 100%;
     }
-    .text{
+
+    .text {
         margin-top: 50px;
         color: var(--medium);
         font-size: 12px;
     }
 
 }
+
 #newsletter {
     margin-top: 100px;
     width: 90%;
@@ -242,10 +253,11 @@ header {
             }
         }
 
-
     }
 
 }
+
+
 
 #footer {
     width: 80%;
@@ -298,16 +310,7 @@ header {
 }
 
 @media (max-width: 800px) {
-    #projects {
-        .container {
-
-        }
-
-    }
-
     #newsletter {
-
-
         form {
             gap: 20px;
         }
@@ -317,6 +320,5 @@ header {
         .footer-links {
             gap: 10px;
         }
-
     }
 }

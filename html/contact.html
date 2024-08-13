@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/burger.css">
     <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
+
 <body>
     <header>
         <nav id="nav-bar">
@@ -21,21 +24,44 @@
                     <a class="menu-link" href="../index.html">Services</a>
                 </div>
                 <a class="btn" href="">Contact Us</a>
-                <div id="burger"></div>         
+                <div id="burger"></div>
             </div>
         </nav>
     </header>
-    
     <main>
         <section id="form" class="centeredAtNucleo">
-
+            <h1>Contact Us</h1>
+            <form class="form-container" action="" >
+                <div class="contact-name">
+                    <label for="name">Full Name</label><br/>
+                    <input id="name" name="name" type="text"  placeholder="Enter your full name">
+                </div>
+                <div class="contact-mode">
+                    <div class="contact-mode-email">
+                        <label for="email">Email</label><br/>
+                        <input id="email" name="email" type="email"  placeholder="Enter your email address">
+                    </div>
+                    <div class="contact-mode-phone">
+                        <label for="phone">Phone</label><br/>
+                        <input id="phone" name="phone" type="number"  placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="contact-message">
+                    <label for="message">Message</label><br/>
+                    <textarea id="message" name="message"placeholder="Write your message here..."></textarea>
+                </div>
+                
+                <button id="submit" class="btn" type="submit">Send</button>
+            </form>
         </section>
     </main>
-    <footer id="footer"  class="centeredAtNucleo">
+    <footer id="footer" class="centeredAtNucleo">
 
     </footer>
+    <div id="btn-go-top"></div>
     <script src="../js/global.js"></script>
     <script src="../js/burger.js"></script>
     <script src="../js/scroll.js"></script>
 </body>
+
 </html>

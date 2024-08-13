@@ -19,13 +19,16 @@
     display: none;
     list-style: none;
     transition: all 0.4s ease;
-    :first-child{
-        margin-top:100px;
+
+    :first-child {
+        margin-top: 100px;
     }
-    .menu-link{
+
+    .menu-link {
         margin: 10px;
     }
-    .menu-link:hover{
+
+    .menu-link:hover {
         color: white;
     }
 
@@ -45,14 +48,15 @@
     #burger {
         display: none;
     }
-    #nav-menu-vertical{
+
+    #nav-menu-vertical {
         visibility: hidden;
     }
 }
 
 @media (max-width: 600px) {
-    #nav-menu-horizontal{
+    #nav-menu-horizontal {
         display: none;
     }
-   
+
 }
