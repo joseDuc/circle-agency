@@ -1,11 +1,15 @@
-var rutaProjects = 'https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects'
+var urlProjects = 'https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects'
 var windowName='';
 window.addEventListener('load', () => {
-    const name =window.location.pathname;
-    windowName=name.split('/');
+    windowName=window.location.pathname.split('/');
     windowName=windowName[windowName.length-1]
     insertFormNewsLetter();
     insertFooter();
+
+    const newsLetterBtn=document.querySelector('#newsletter .form-btn');
+    if(newsLetterBtn){
+        newsLetterBtn.addEventListener('submit',goContact);
+    }
 });
 function appendJsonToProjectArticles(data) {
     const container = document.querySelector('#projects .container');
@@ -72,18 +76,22 @@ function insertFormNewsLetter() {
         p.innerText = 'Let us help you!'
         f.appendChild(p)
         i.type = 'email';
+        i.name='email';
+        i.id='email';
+        i.className='form-email';
         i.placeholder = 'Enter your email';
 
         b.type = 'submit';
         b.innerText = 'Subscribe';
-        b.className = 'btn';
+        b.classList = 'form-btn btn';
         d.class = 'suscribe';
         d.appendChild(i);
         d.appendChild(b);
         f.appendChild(d);
         news.appendChild(f);
         f.className = 'centeredAtNucleo';
-        f.action = '../html/contact.html'
+        f.action='/html/contact.html'
+        
     }
 }
 
@@ -191,5 +199,13 @@ function getQuerystring(param) {
         }
     } else {
         return null;
+    }
+}
+
+function goContact(e){
+    if (e){
+        const form=document.querySelector('#newsletter form');
+        const email=document.querySelector('#newsletter .form-email');
+
     }
 }

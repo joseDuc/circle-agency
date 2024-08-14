@@ -30,7 +30,6 @@
             margin-top: 5px;
             background-color: rgba(107, 112, 141, 0.1);
             border: 0px;
-            text-align: justify;
         }
         input[type='submit' ]{
             font-size: 12px;
@@ -62,6 +61,8 @@
                 }
             }
         }
+
+
 
     }
     .errorMsg{

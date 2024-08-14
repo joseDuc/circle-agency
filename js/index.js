@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
 
 async function loadRecentProjects() {
     try {
-        const response = await fetch(rutaProjects);
+        const response = await fetch(urlProjects);
         const data = await response.json();
         appendJsonToProjectArticles(data);
     } catch (e) {

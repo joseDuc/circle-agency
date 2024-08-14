@@ -33,25 +33,25 @@
             <h1>Contact Us</h1>
             <form class="form-container" action="" >
                 <div class="contact-name">
-                    <label for="name">Full Name</label><br/>
-                    <input id="name"  name="name" type="text"  placeholder="Enter your full name">
+                    <label for="name">Full Name*</label><br/>
+                    <input id="name"  name="name" type="text" required placeholder="Enter your full name">
                 </div>
                 <div class="contact-mode">
                     <div class="contact-mode-email">
                         <label for="email">Email</label><br/>
-                        <input id="email" name="email"   type="email"  placeholder="Enter your email address">
+                        <input id="email" name="email"   type="email" required placeholder="Enter your email address">
                     </div>
                     <div class="contact-mode-phone">
                         <label for="phone">Phone</label><br/>
-                        <input id="phone" name="phone" type="number"  placeholder="Enter your phone number">
+                        <input id="phone" name="phone" type="number" required placeholder="Enter your phone number">
                     </div>
                 </div>
                 <div class="contact-message">
                     <label for="message">Message</label><br/>
-                    <textarea id="message" name="message"placeholder="Write your message here..."></textarea>
+                    <textarea id="message" name="message" required placeholder=" Write your message here..."></textarea>
                 </div>
                 <input id="submit" class="btn" type="submit" value="Send">
-                <p class="errorMsg" hidden>Please, insert the requered data</p>
+                <p class="errorMsg" hidden>Please, insert the requested data</p>
             </form>
         </section>
     </main>

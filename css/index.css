@@ -116,7 +116,7 @@
         flex-direction: column;
         align-items: center;
         gap: 80px;
-        padding-top: 80px;
+        padding-top: 100px;
 
         .testimonial-profile-title {
             color: var(--light);
@@ -149,12 +149,6 @@
                 font-size: 0.7em;
             }
 
-        }
-    }
-
-    #testimonial-profile {
-        .testimonial-profile {
-            gap: 10px;
         }
     }
 }
@@ -247,7 +241,8 @@
         }
 
         .testimonial-profile {
-            gap: 50px;
+            gap: 30px;
+
         }
     }
 
