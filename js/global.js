@@ -34,7 +34,7 @@ function convertToProyectAnchor(project) {
     const anchor = document.createElement('a');
     const img = document.createElement('img');
     anchor.className = 'project-anchor';
-    anchor.href = `/html/projects.html?id=${project.uuid}`;
+    anchor.href = `../html/projects.html?id=${project.uuid}`;
     img.className = 'project-img';
     img.src = project.image;
     img.alt = project.image;
@@ -108,6 +108,7 @@ function insertFooter() {
         divLinks.appendChild(i);
         i = document.createElement('a');
         i.innerText = 'Services';
+        i.href='/index.html#services'
         divLinks.appendChild(i);
         i = document.createElement('a');
         i.innerText = 'About Us';
@@ -117,6 +118,7 @@ function insertFooter() {
         divLinks.appendChild(i);
         i = document.createElement('a');
         i.innerText = 'Projects';
+        i.href='../html/projects.html'
         divLinks.appendChild(i);
         i = document.createElement('a');
         i.innerText = 'Privacy Policy';
