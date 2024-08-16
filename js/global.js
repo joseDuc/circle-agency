@@ -127,7 +127,7 @@ function insertFooter() {
         divLinks.className = 'footer-links';
 
         i = document.createElement('a');
-        i.href = '';
+        i.href = '/index.html';
         img.src = '../img/logos/circle.svg';
         img.alt = 'logo';
         i.appendChild(img)
