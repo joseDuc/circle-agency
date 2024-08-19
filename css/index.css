@@ -187,7 +187,7 @@
     }
 
     .card:hover {
-        box-shadow: 15px 15px 15px  var(--dark);
+        box-shadow: 15px 15px 15px var(--dark);
     }
 
     .services-cards {
@@ -204,7 +204,8 @@
 
 
 
-@media (max-width: 600px) {
+
+@media (max-width: 750px) {
     #hero {
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -214,8 +215,10 @@
         }
 
         .hero-images {
-            .img-carda {
-                width: 80px;
+            width: 80%;
+
+            .img-hero {
+                width: 100%;
             }
         }
     }

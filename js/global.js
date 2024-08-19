@@ -6,10 +6,6 @@ window.addEventListener('load', () => {
     insertFormNewsLetter();
     insertFooter();
 
-    const newsLetterBtn=document.querySelector('#newsletter .form-btn');
-    if(newsLetterBtn){
-        newsLetterBtn.addEventListener('submit',goContact);
-    }
 });
 function appendJsonToProjectArticles(data) {
     const container = document.querySelector('#projects .container');
@@ -204,10 +200,3 @@ function getQuerystring(param) {
     }
 }
 
-function goContact(e){
-    if (e){
-        const form=document.querySelector('#newsletter form');
-        const email=document.querySelector('#newsletter .form-email');
-
-    }
-}
