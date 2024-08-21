@@ -62,14 +62,14 @@
         width: 100%;
         margin: auto;
         filter: grayscale(1);
-        transition: width 0.5s;
+        transition: all 0.5s;
     }
 
     .clientes-image:hover {
         filter: grayscale(0);
         width: 125%;
         margin: auto;
-        transition: width 0.5s;
+        transition: all 0.5s;
 
     }
 }
@@ -234,7 +234,7 @@
             filter: grayscale(0);
             width: 85px;
             margin: auto;
-            transition: width 0.5s;
+            transition: all 0.5s;
         }
     }
 
@@ -249,4 +249,12 @@
         }
     }
 
+}
+
+@media (max-width: 550px) {
+    #clients {
+        gap: 50px;
+
+        
+    }
 }
