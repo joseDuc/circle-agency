@@ -9,7 +9,7 @@
     background-size: cover;
     bottom: 30px;
     right: 10px;
-    animation: moveBtnGoTop 3s ease-in-out infinite;
+    animation: moveBtnGoTop 4s ease-in-out infinite;
     visibility: hidden;
 }
 
@@ -41,6 +41,6 @@
 
 @media(max-width:600px) {
     #btn-go-top {
-        right: 50px;
+        right: 70px;
     }
 }
